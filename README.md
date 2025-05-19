@@ -18,7 +18,7 @@ cd laravel-realworld-example-app
 ## Start the Application with Docker
 
 ```
-docker-compose up --build
+docker compose up --build
 ```
 
 ## 🌐 Access the API
