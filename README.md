@@ -1,37 +1,28 @@
-### Laravel implementation of RealWorld app
+# 🐳 Laravel RealWorld Example App (Dockerized)
 
-This Laravel app is part of the [RealWorld](https://github.com/gothinkster/realworld) project and implementation of the [Laravel best practices](https://github.com/alexeymezenin/laravel-best-practices).
+This is a **Dockerized version** of the Laravel RealWorld Example App, originally available at [laravel-realworld-example-app](https://github.com/alexeymezenin/laravel-realworld-example-app).  
+It demonstrates how to containerize a Laravel project using **Docker**, **Docker Compose**, and a simple startup script.
 
-You might also check [Ruby on Rails version](https://github.com/alexeymezenin/ruby-on-rails-realworld-example-app) of this app.
+---
 
-See how the exact same Medium.com clone (called [Conduit](https://demo.realworld.io)) is built using different [frontends](https://codebase.show/projects/realworld?category=frontend) and [backends](https://codebase.show/projects/realworld?category=backend). Yes, you can mix and match them, because **they all adhere to the same [API spec](https://gothinkster.github.io/realworld/docs/specs/backend-specs/introduction)**
+## 🔧 How to Run This App
 
-### How to run the API
+### 1. 📥 Clone the Repo
 
-Make sure you have PHP and Composer installed globally on your computer.
-
-Clone the repo and enter the project folder
-
-```
+```bash
 git clone https://github.com/alexeymezenin/laravel-realworld-example-app.git
 cd laravel-realworld-example-app
 ```
 
-Install the app
+
+## Start the Application with Docker
 
 ```
-composer install
-cp .env.example .env
+docker-compose up --build
 ```
 
-Run the web server
+## 🌐 Access the API
 
 ```
-php artisan serve
-```
-
-That's it. Now you can use the api, i.e.
-
-```
-http://127.0.0.1:8000/api/articles
+http://localhost:8000/api/articles
 ```
